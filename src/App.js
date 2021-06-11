@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Pages from './components/Pages/Pages';
+import { BrowserRouter, Route } from 'react-router-dom';
+import AboutMe from './components/Pages/componentsAboutMe/AboutMe'
+import AppToDo from './components/Pages/componentsToDo/AppToDo';
+import AppWeather from './components/Pages/componentsWeather/AppWeather';
+import Photo from './components/componentsImages/images';
+console.log(AboutMe)
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+
+
+      <div className="App">
+        <photo />
+        <Pages />
+        <div>
+          <Route path='/aboutMe' component={AboutMe} />
+          <Route path='/AppToDo' component={AppToDo} />
+          <Route path='/AppWeather' component={AppWeather} />
+          <Route path='/images' component={Photo} />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
