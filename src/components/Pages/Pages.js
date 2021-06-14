@@ -2,12 +2,12 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 const Pages = () => {
     return (
-        <div>
+        <div className="grid">
             <h1>Welcome Page</h1>
             <a href="/aboutMe">AboutMe</a>
-            <div><NavLink to="/AppToDo">To Do App</NavLink></div>
-            <div><NavLink to="/AppWeather">Weather App</NavLink></div>
-            <div><NavLink to="/images">images</NavLink></div>
+            <div className="grid-item grid-item-1"><NavLink to="/AppToDo">To Do App</NavLink></div>
+            <div className="grid-item grid-item-1"><NavLink to="/AppWeather">Weather App</NavLink></div>
+            <div className="grid-item grid-item-1"><NavLink to="/images">images</NavLink></div>
         </div>
     );
 }
