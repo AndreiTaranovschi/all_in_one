@@ -6,6 +6,9 @@ import AboutMe from './components/Pages/componentsAboutMe/AboutMe'
 import AppToDo from './components/Pages/componentsToDo/AppToDo';
 import AppWeather from './components/Pages/componentsWeather/AppWeather';
 import Photo from './components/componentsImages/images';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+
 console.log(AboutMe)
 function App() {
 
@@ -16,7 +19,10 @@ function App() {
 
       <div className="App">
         <photo />
+
         <Pages />
+
+
         <div>
           <Route path='/aboutMe' component={AboutMe} />
           <Route path='/AppToDo' component={AppToDo} />

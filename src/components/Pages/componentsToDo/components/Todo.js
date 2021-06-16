@@ -10,7 +10,9 @@ const Todo = ({ text, todos, setTodos, todo }) => {
                 return {
                     ...item, completed: !item.completed
                 }
+
             }
+
             return item;
         }))
     }
