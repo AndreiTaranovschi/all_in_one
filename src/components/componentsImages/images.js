@@ -9,7 +9,7 @@ function Photo() {
         console.log(fetching)
         if (fetching) {
             console.log(fetching)
-            axios.get(`https://jsonplaceholder.typicode.com/photos?_limit=10&_page=${currentPage}`)
+            axios.get(`https://jsonplaceholder.typicode.com/photos?_limit=30&_page=${currentPage}`)
                 .then(response => {
                     setPhotos([...photos, ...response.data])
                     setCurrentPage(prevState => prevState + 1)
@@ -33,7 +33,7 @@ function Photo() {
         }
     }
     return (
-        <div>
+        <div className="images">
             {photos.map(photo =>
                 <div key={photo.id}>
                     <div>{photo.id}. {photo.title}</div>
