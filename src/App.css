@@ -154,8 +154,30 @@ select {
   background-image: url("https://thumbs.gfycat.com/DisgustingFluffyCony-size_restricted.gif"); /* Путь к фоновому изображению */
   background-color: #c7b39b; /* Цвет фона */
 }
+.title {
+  /* text-align: center; */
+  margin-left: auto;
+  align-items: baseline;
+  align-content: flex-start;
+  align-self: flex-start;
+  background: aqua;
+  /* flex: 1; */
+  /* -webkit-line-clamp: 0; */
+}
 .images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.image3 {
+  flex: 1;
+  justify-content: flex-end;
+  align-self: flex-end;
+  background: aquamarine;
+}
+.images2 {
+  flex-direction: column-reverse;
+  width: 400px;
+  display: flex;
+  
 }

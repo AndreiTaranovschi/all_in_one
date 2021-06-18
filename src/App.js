@@ -7,7 +7,6 @@ import AppToDo from './components/Pages/componentsToDo/AppToDo';
 import AppWeather from './components/Pages/componentsWeather/AppWeather';
 import Photo from './components/componentsImages/images';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
 
 console.log(AboutMe)
 function App() {

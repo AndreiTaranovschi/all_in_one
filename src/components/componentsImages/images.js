@@ -33,13 +33,15 @@ function Photo() {
         }
     }
     return (
-        <div className="images">
-            {photos.map(photo =>
-                <div key={photo.id}>
-                    <div>{photo.id}. {photo.title}</div>
-                    <img src={photo.thumbnailUrl} alt="" />
-                </div>
-            )}
+        <div className="container">
+            <div className="images">
+                {photos.map(photo =>
+                    <div key={photo.id} className="images2">
+                        <div className="title">{photo.id}. {photo.title}</div>
+                        <div className="image3"><img src={photo.thumbnailUrl} alt="" /></div>
+                    </div>
+                )}
+            </div>
         </div>
     );
 }
